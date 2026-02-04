@@ -221,7 +221,7 @@ export default function Workouts() {
             <CardContent className="p-6">
               <h3 className="font-semibold text-lg mb-4">Recent Sessions</h3>
               <div className="space-y-3">
-                {sessions.slice().reverse().slice(0, 10).map((session, index) => (
+                {sessions.slice().reverse().slice(0, 10).map((session) => (
                   <div 
                     key={session.id}
                     className="flex items-center justify-between p-4 bg-secondary/50 rounded-lg border border-border hover:border-emerald-500/40 transition-colors"

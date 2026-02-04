@@ -55,7 +55,7 @@ export default function Exercises() {
             : "No description available.";
 
           // Get image based on category and exercise ID
-          const imageUrl = getExerciseImage(ex.category?.name, ex.id);
+          const imageUrl = getExerciseImage(ex.category?.name);
 
           return (
             <BlurFade key={ex.id} delay={0.1 + index * 0.05}>

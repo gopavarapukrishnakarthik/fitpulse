@@ -96,7 +96,6 @@ function shuffleArray<T>(array: T[]): T[] {
  */
 export const getExerciseImage = (
   categoryName?: string | null,
-  exerciseId?: string | number
 ): string => {
   // Normalize category name
   const normalizedCategory = categoryName ? normalizeCategoryName(categoryName) : null;

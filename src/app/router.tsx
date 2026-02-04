@@ -29,6 +29,7 @@ function RootLayout() {
 export const router = createBrowserRouter([
   {
     element: <RootLayout />,
+    
     children: [
       { path: "/", element: <Dashboard /> },
       { path: "/exercises", element: <Exercises /> },
@@ -39,4 +40,7 @@ export const router = createBrowserRouter([
       { path: "/settings", element: <Settings /> },
     ],
   },
-]);
+],{
+    basename: "/fitpulse",
+  }
+);

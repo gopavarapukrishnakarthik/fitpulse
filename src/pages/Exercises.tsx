@@ -55,7 +55,7 @@ export default function Exercises() {
             : "No description available.";
 
           // Get image based on category and exercise ID
-          const imageUrl = getExerciseImage(ex.category?.name);
+          const imageUrl = getExerciseImage(ex.category?.name, ex.id);
 
           return (
             <BlurFade key={ex.id} delay={0.1 + index * 0.05}>
@@ -70,7 +70,7 @@ export default function Exercises() {
                       loading="lazy"
                       onError={(e) => {
                         // Fallback if image fails to load
-                        e.currentTarget.src = '/Images/Cardio/pexels-823sl-2294360.jpg';
+                        e.currentTarget.src = '/fitpulse/Images/Cardio/pexels-823sl-2294360.jpg';
                       }}
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent" />
